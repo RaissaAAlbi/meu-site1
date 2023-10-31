@@ -1,0 +1,138 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color:rgb(178, 174, 174);
+    margin:0;
+}
+
+#Bar_lateral{
+    grid-area: bar_lateral;
+    display: flex;
+    flex-direction: column;
+    margin: 3vh 5vw 0 5vw;
+    padding: 0 2vw 0 2vw;
+    background-color:rgb(208, 193, 221);
+    border-radius: 10px;
+}
+
+#paragrafo_1{
+    grid-area: parag1;
+}
+
+header{
+    height: 100vh;
+    display: grid;
+    grid-template-areas: 'parag1 parag1 parag1 bar_lateral';
+    justify-content: center;
+    margin-left: 7vw;
+}
+
+header p{
+    font-size: 20px;
+    margin-top: 5vh;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+main{
+    margin-right: 45vw;
+    margin-left: 7vw;
+}
+
+p{
+    font-size: 20px;
+    text-align: justify;
+}
+
+ul, ol{
+    font-size: 20px;
+}
+
+a{
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+}
+
+h1{
+    margin-top: 8vh;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 60px;
+}
+
+h2{
+    font-size: 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h3{
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+table, tr, th, td{
+    border: solid 2px rgb(6, 6, 6);
+    font-size: 25px;
+    border-collapse:collapse;
+    color: rgb(97, 96, 96);
+    background-color:rgb(255, 255, 255);
+    width: 80%;
+}
+
+th{
+    background-color: rgb(82, 79, 79);
+    color: rgb(243, 244, 244);
+}
+
+footer{
+    background-color:rgb(215, 194, 235);
+    padding: 2vh 0 2vh 7vw;
+    font-family: sans-serif;
+}
+
+@media only screen and (max-width: 992px){
+    main, header{
+        margin-right: 10vw;
+    }
+    #Bar_lateral{
+        display:none
+    }
+}
+
+@media only screen and (max-width: 600px){
+
+    table, tr, th, td{
+        font-size: 15px;
+    }
+    h3{
+        font-size: 20px;
+    }
+
+    h2{
+        font-size: 25px;
+    }
+
+    h1{
+        font-size: 30px;
+    }
+    
+    img{
+        width: 80vw;
+        height: 30vh;
+    }
+
+   body p{
+        font-size: 15px;
+
+    }
+
+    ul, ol{
+        font-size: 15px;
+    }
